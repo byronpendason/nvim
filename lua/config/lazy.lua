@@ -25,8 +25,6 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    --{ "folke/tokyonight.nvim", config = function() vim.cmd[[colorscheme tokyonight]] end },
-    { 'AlexvZyl/nordic.nvim', config = function() vim.cmd('colorscheme nordic') end },
     { import = "config.plugins" },
   },
   -- automatically check for plugin updates

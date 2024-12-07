@@ -3,6 +3,7 @@ vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
 vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>', {desc = 'Open file explorer' })
+vim.keymap.set('n', '<C-s', ':write<CR>', { desc = 'Save file'} )
 
 vim.keymap.set('n', '<A-l>', ':bnext<CR>', { desc = 'Navigate to the next buffer' })
 vim.keymap.set('n', '<A-h>', ':bprevious<CR>', { desc = 'Navigate to the previous buffer' })
