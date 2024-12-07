@@ -2,7 +2,7 @@
 
 My config for Neovim in my Termux environment.
 
-## Instalation
+## Installation
 
 Backup current nvim config (if it exists already):
 
