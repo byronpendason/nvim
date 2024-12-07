@@ -13,3 +13,5 @@ vim.o.wrap = true
 vim.o.linebreak = true -- breaks by word rather than character
 
 vim.opt.termguicolors = true
+
+vim.opt.autochdir = true
