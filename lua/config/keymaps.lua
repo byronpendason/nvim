@@ -9,4 +9,4 @@ vim.keymap.set('n', '<A-l>', ':bnext<CR>', { desc = 'Navigate to the next buffer
 vim.keymap.set('n', '<A-h>', ':bprevious<CR>', { desc = 'Navigate to the previous buffer' })
 vim.keymap.set('n', '<A-l>s', ':ls<CR>', { desc = 'List buffers' })
 vim.keymap.set('n', '<A-x>', ':bdelete<CR>', { desc = 'Close current buffer' })
-vim.keymap.set('n', '<A-a>', ':badd ', { desc = 'Add a ne2 buffer' })
+vim.keymap.set('n', '<A-a>', ':badd ', { desc = 'Add a new buffer' })
