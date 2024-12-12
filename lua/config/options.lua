@@ -3,15 +3,25 @@ vim.opt.tabstop = 2
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.wo.number = true
-vim.wo.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
-vim.o.textwidth = 0
-vim.o.wrapmargin = 0
+vim.opt.textwidth = 0
+vim.opt.wrapmargin = 0
 -- visual wrap (no real line cutting is made)
-vim.o.wrap = true
-vim.o.linebreak = true -- breaks by word rather than character
+vim.opt.wrap = true
+vim.opt.linebreak = true -- breaks by word rather than character
 
 vim.opt.termguicolors = true
 
 vim.opt.autochdir = true
+
+-- Limit syntax highlighting on really long lines. 
+vim.opt.synmaxcol = 200
+
+vim.opt.scrolloff = 999
+
+vim.opt.virtualedit = "block"
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true

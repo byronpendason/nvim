@@ -11,8 +11,14 @@ return {
 				find_files = {
 					theme = "dropdown"
 				},
+			},
+			extensions = {
+				fzf = {}
 			}
 		}
+
+		require("telescope").load_extension('fzf')
+
 		vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = "Find files (using Telescope)" })
 		vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, { desc = "Find files (using Telescope)" })
 		vim.keymap.set('n', '<leader>fn', function()
