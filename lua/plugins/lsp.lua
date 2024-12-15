@@ -16,6 +16,7 @@ return {
 		require('lspconfig').ts_ls.setup({})
 		require('lspconfig').html.setup({})
 		require('lspconfig').bashls.setup({})
+		require('lspconfig').clangd.setup({})
 
 		vim.keymap.set('n', '<leader>cf', function() vim.lsp.buf.format() end, { desc = 'Format code' })
 	end,
