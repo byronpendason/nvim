@@ -12,11 +12,13 @@ return {
 		},
 	},
 	config = function()
-		require('lspconfig').lua_ls.setup({})
-		require('lspconfig').ts_ls.setup({})
-		require('lspconfig').html.setup({})
-		require('lspconfig').bashls.setup({})
-		require('lspconfig').clangd.setup({})
+		local capabilities = require('blink.cmp').get_lsp_capabilities()
+
+		require('lspconfig').lua_ls.setup({ capabilities = capabilities })
+		require('lspconfig').ts_ls.setup({ capabilities = capabilities })
+		require('lspconfig').html.setup({ capabilities = capabilities })
+		require('lspconfig').bashls.setup({ capabilities = capabilities })
+		require('lspconfig').clangd.setup({ capabilities = capabilities })
 
 		vim.keymap.set('n', '<leader>cf', function() vim.lsp.buf.format() end, { desc = 'Format code' })
 	end,
